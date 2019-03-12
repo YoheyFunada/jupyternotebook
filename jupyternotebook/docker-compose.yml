@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  jupyter:
+    build:
+      context: jupyter
+      dockerfile: Dockerfile
+    container_name: jnbcontainer
+    image: jnbimage
+    ports:
+      - 8888:8888
+    tty: true
+    stdin_open: true
+    environment:
+      - HOST=0.0.0.0

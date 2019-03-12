@@ -1,0 +1,15 @@
+#docker container run -it -d --name mynotebook -p 8888:8888 fulufulu/mynotebook:1
+#どのイメージを基にするか
+FROM jupyter/tensorflow-notebook
+# 作成したユーザの情報
+MAINTAINER yoheyfunada@gmail.com
+
+COPY ./jupyter_notebook_config.py /home/jovyan/.jupyter/jupyter_notebook_config.py
+# COPY ./test.py /home/jovyan/.jupyter/test.py
+
+# 親ホストのどのポートにマッピングするかはコンテナ起動時に決定します。
+#EXPOSE 8888
+# RUN: docker buildするときに実行される
+#RUN echo "now building..."
+# CMD: docker runするときに実行される
+#CMD echo "now running..."
