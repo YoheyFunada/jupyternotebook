@@ -2,7 +2,7 @@ version: '3.3'
 services:
   jupyter:
     build:
-      context: jupyter
+      context: jupyternotebook
       dockerfile: Dockerfile
     container_name: jnbcontainer
     image: jnbimage
