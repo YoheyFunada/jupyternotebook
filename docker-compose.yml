@@ -7,7 +7,7 @@ services:
     container_name: jnbcontainer
     image: jnbimage
     ports:
-      - 8888:8888
+      - 80:8888
     tty: true
     stdin_open: true
     environment:
