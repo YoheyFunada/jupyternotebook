@@ -6,6 +6,8 @@ services:
       dockerfile: Dockerfile
     container_name: jnbcontainer
     image: jnbimage
+    volumes:
+      - ./jupyternotebook/work:/home/jovyan/work
     ports:
       - 80:8888
     tty: true
