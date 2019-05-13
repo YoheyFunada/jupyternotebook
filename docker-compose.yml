@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  jupyter:
+    build:
+      context: jupyternotebook
+      dockerfile: Dockerfile
+    container_name: jnbcontainer
+    image: jnbimage
+    volumes:
+      - ./jupyternotebook/src:/home/jovyan:cached
+    ports:
+      - 80:8888
+    tty: true
+    stdin_open: true
+    environment:
+      - HOST=0.0.0.0
