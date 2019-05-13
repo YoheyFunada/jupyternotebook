@@ -13,3 +13,4 @@ COPY ./jupyter_notebook_config.py /home/jovyan/.jupyter/jupyter_notebook_config.
 #RUN echo "now building..."
 # CMD: docker runするときに実行される
 #CMD echo "now running..."
+RUN pip install tflearn
