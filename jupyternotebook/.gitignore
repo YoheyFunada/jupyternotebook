@@ -1,4 +1,4 @@
 .ipynb_checkpoints
-.ipython
-.local
-.jupyter
+src/.ipython
+src/.local
+src/.jupyter
