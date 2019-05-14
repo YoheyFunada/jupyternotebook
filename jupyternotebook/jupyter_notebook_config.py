@@ -761,3 +761,5 @@ c.NotebookApp.token = ''
 #  
 #  By default, all installed kernels are allowed.
 #c.KernelSpecManager.whitelist = set()
+
+c.ContentsManager.default_jupytext_formats = "ipynb,py"
