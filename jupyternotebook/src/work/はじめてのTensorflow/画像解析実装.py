@@ -49,6 +49,7 @@ for i,d in enumerate(train_dirs):
         gray_image = image.convert('L')
         # 画像ファイルをピクセル値へ変換
         gray_image_px = np.array(gray_image)
+        #gray_image_pxをフラット（一次元配列）に変換
         gray_image_flatten = gray_image_px.flatten().astype(np.float32)/255.0
         trainX.append(gray_image_flatten)
         
